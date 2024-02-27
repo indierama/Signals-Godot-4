@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://c7rqrexi0sdr2"]
+
+[ext_resource type="Texture2D" uid="uid://cm2u8ho6nuwgw" path="res://scenes/main/platform.png" id="1_v3crn"]
+[ext_resource type="FontFile" uid="uid://cdx6sph5ipk4a" path="res://scenes/main/College Boy.otf" id="1_y4uvk"]
+[ext_resource type="Script" path="res://scenes/main/bomb_spawner.gd" id="2_lc0mt"]
+[ext_resource type="PackedScene" uid="uid://dpmumkviphtni" path="res://scenes/bomb/bomb.tscn" id="3_q3jum"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c3wtk"]
+size = Vector2(380, 30)
+
+[node name="Main" type="Node"]
+
+[node name="BombSpawner" type="Node2D" parent="."]
+script = ExtResource("2_lc0mt")
+bomb_scene = ExtResource("3_q3jum")
+
+[node name="BombButton" type="Button" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -50.0
+offset_top = 31.0
+offset_right = 30.0
+offset_bottom = 69.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_y4uvk")
+theme_override_font_sizes/font_size = 18
+text = "+1 BOMB"
+
+[node name="Platform" type="StaticBody2D" parent="."]
+position = Vector2(213, 209)
+
+[node name="Sprite2D" type="Sprite2D" parent="Platform"]
+texture = ExtResource("1_v3crn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform"]
+shape = SubResource("RectangleShape2D_c3wtk")

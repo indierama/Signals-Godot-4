@@ -1,0 +1,15 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1709050708
+::res://scenes/::1709050702
+::res://scenes/bomb/::1709050702
+bomb-explode.png::CompressedTexture2D::1386605496021406303::1709050702::1709050709::1::::<><>::
+bomb-on.png::CompressedTexture2D::4271425240438750065::1709050702::1709050709::1::::<><>::
+bomb.gd::GDScript::-1::1709050702::0::1::::<>RigidBody2D<>::
+bomb.tscn::PackedScene::8238103566138914422::1709050702::0::1::::<><>::res://scenes/bomb/bomb.gd<>uid://b14d0quei1f5r::::res://scenes/bomb/bomb-on.png
+::res://scenes/main/::1709050702
+bomb_spawner.gd::GDScript::-1::1709050702::0::1::::<>Node2D<>::
+College Boy.otf::FontFile::5032803757747961210::1709050702::1709050709::1::::<><>::
+main.tscn::PackedScene::7054980862024406729::1709050702::0::1::::<><>::uid://cm2u8ho6nuwgw::::res://scenes/main/platform.png<>uid://cdx6sph5ipk4a::::res://scenes/main/College Boy.otf<>res://scenes/main/bomb_spawner.gd<>uid://dpmumkviphtni::::res://scenes/bomb/bomb.tscn
+platform.png::CompressedTexture2D::5672119352173790602::1709050702::1709050709::1::::<><>::
+::res://sprites/::1709050702
+icon.svg::CompressedTexture2D::5713759381944157449::1709050702::1709050709::1::::<><>::
